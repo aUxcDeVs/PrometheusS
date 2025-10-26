@@ -11,7 +11,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "";
         -- Name Generator for Variables
-        NameGenerator = "MangledShuffled";
+        NameGenerator = "Il";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -27,7 +27,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "";
         -- Name Generator for Variables that look like this: IlI1lI1l
-        NameGenerator = "MangledShuffled";
+        NameGenerator = "Il";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -61,7 +61,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "";
         -- Name Generator for Variables
-        NameGenerator = "MangledShuffled";
+        NameGenerator = "Il";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
