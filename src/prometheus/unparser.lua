@@ -27,7 +27,11 @@ Unparser.SPACE = config.SPACE;
 Unparser.TAB = config.TAB;
 
 local function escapeString(str)
-	str = util.escape(str)
+	str = str:gsub("\\", "\\\\")
+	str = str:gsub("\"", "\\\"")
+	str = str:gsub("\n", "\\n")
+	str = str:gsub("\r", "\\r")
+	str = str:gsub("\t", "\\t")
 	return str;
 end
 
