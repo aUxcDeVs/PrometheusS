@@ -22,34 +22,40 @@ return {
         }
     };
     ["Weak"] = {
-    LuaVersion = "Lua51";
-    VarNamePrefix = "";
-    NameGenerator = "Il";
-    PrettyPrint = false;
-    Seed = 0;
-    Steps = {
-        {
-            Name = "Vmify";
-            Settings = {
-                
-            };
-        },
-        {
-            Name = "ConstantArray";
-            Settings = {
-                Treshold    = 1;
-                StringsOnly = true;
-                Encoding = "base64"; 
-            }
-        },
-        {
-            Name = "WrapInFunction";
-            Settings = {
+        LuaVersion = "Lua51";
+        VarNamePrefix = "";
+        NameGenerator = "MangledFusedNumber";
+        PrettyPrint = false;
+        Seed = 0;
+        Steps = {
+            {
+                Name = "AntiTamper";
+                Settings = {
+                    UseDebug = true;
+                };
+            },
+            {
+                Name = "Vmify";
+                Settings = {
+                    
+                };
+            },
+            {
+                Name = "ConstantArray";
+                Settings = {
+                    Treshold    = 1;
+                    StringsOnly = true;
+                    Encoding = "base64"; 
+                }
+            },
+            {
+                Name = "WrapInFunction";
+                Settings = {
 
-            }
-        },
-    }
-};
+                }
+            },
+        }
+    };
     ["Medium"] = {
         -- The default LuaVersion is Lua51
         LuaVersion = "Lua51";
