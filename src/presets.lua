@@ -23,7 +23,7 @@ return {
     };
     ["Weak"] = {
         LuaVersion = "Lua51";
-        VarNamePrefix = "";
+        VarNamePrefix = "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOIOOIIIOIIOOOOOOOOOOOOIIIIIIIOOOO1112121222221111111111111";
         NameGenerator = "Mangled";
         PrettyPrint = false;
         Seed = 0;
@@ -31,7 +31,7 @@ return {
             {
                 Name = "AntiTamper";
                 Settings = {
-                    UseDebug = true;
+                    UseDebug = false;
                 };
             },
             {
