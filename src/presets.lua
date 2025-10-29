@@ -24,7 +24,7 @@ return {
     ["Weak"] = {
         LuaVersion = "Lua51";
         VarNamePrefix = "";
-        NameGenerator = "MangledFusedNumber";
+        NameGenerator = "Mangled";
         PrettyPrint = false;
         Seed = 0;
         Steps = {
