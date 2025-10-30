@@ -23,7 +23,7 @@ return {
     };
     ["Weak"] = {
         LuaVersion = "Lua51";
-        VarNamePrefix = "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOIOOIIIOIIOOOOOOOOOOOOIIIIIIIOOOO1112121222221111111111111";
+        VarNamePrefix = "";
         NameGenerator = "Mangled";
         PrettyPrint = false;
         Seed = 0;
