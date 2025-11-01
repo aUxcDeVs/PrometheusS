@@ -62,7 +62,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "A";
         -- Name Generator for Variables
-        NameGenerator = "Il";
+        NameGenerator = "Mangled";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
