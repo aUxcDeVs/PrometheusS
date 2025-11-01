@@ -23,7 +23,7 @@ return {
     };
     ["Weak"] = {
         LuaVersion = "Lua51";
-        VarNamePrefix = "W";
+        VarNamePrefix = "A";
         NameGenerator = "Mangled";
         PrettyPrint = false;
         Seed = 0;
@@ -60,9 +60,9 @@ return {
         -- The default LuaVersion is Lua51
         LuaVersion = "Lua51";
         -- For minifying no VarNamePrefix is applied
-        VarNamePrefix = "W";
+        VarNamePrefix = "A";
         -- Name Generator for Variables
-        NameGenerator = "Mangled";
+        NameGenerator = "Il";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -95,7 +95,6 @@ return {
                     Shuffle     = true;
                     Rotate      = true;
                     LocalWrapperTreshold = 0;
-                    Encoding = "base64";
                 }
             },
             {
@@ -116,7 +115,7 @@ return {
         -- The default LuaVersion is Lua51
         LuaVersion = "Lua51";
         -- For minifying no VarNamePrefix is applied
-        VarNamePrefix = "W";
+        VarNamePrefix = "A";
         -- Name Generator for Variables that look like this: IlI1lI1l
         NameGenerator = "MangledShuffled";
         -- No pretty printing
@@ -157,7 +156,6 @@ return {
                     Shuffle     = true;
                     Rotate      = true;
                     LocalWrapperTreshold = 0;
-                    Encoding = "base64";  -- ADDED THIS
                 }
             },
             {
