@@ -62,7 +62,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "";
         -- Name Generator for Variables
-        NameGenerator = "Il";
+        NameGenerator = "Mangled";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -94,7 +94,8 @@ return {
                     StringsOnly = true;
                     Shuffle     = true;
                     Rotate      = true;
-                    LocalWrapperTreshold = 0;
+                    LocalWrapperTreshold = 3;
+                    Encoding = "base64";
                 }
             },
             {
@@ -156,6 +157,7 @@ return {
                     Shuffle     = true;
                     Rotate      = true;
                     LocalWrapperTreshold = 0;
+                    Encoding = "base64";  -- ADDED THIS
                 }
             },
             {
