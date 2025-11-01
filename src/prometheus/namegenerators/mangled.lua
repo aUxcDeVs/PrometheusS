@@ -13,10 +13,10 @@ local VarStartDigits = chararray("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRST
 
 local varNames = {
     "exploit",
-    "Skidders",
-    "data",
-    "WeAreNation",
-    "continue",
+    "Z",
+    "T",
+    "🤣",
+    "😂",
     "a", "b", "c", "i", "j", "k",
 }
 
