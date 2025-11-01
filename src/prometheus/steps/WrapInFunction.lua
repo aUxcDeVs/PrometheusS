@@ -9,7 +9,7 @@ local Ast = require("prometheus.ast");
 local Scope = require("prometheus.scope");
 
 local WrapInFunction = Step:extend();
-WrapInFunction.Description = "This Step Wraps the Entire Script into a Function";
+WrapInFunction.Description = "This Step Wraps the Entire Script into a Pcall Function";
 WrapInFunction.Name = "Wrap in Function";
 
 WrapInFunction.SettingsDescriptor = {
@@ -30,14 +30,16 @@ end
 function WrapInFunction:apply(ast)
 	for i = 1, self.Iterations, 1 do
 		local body = ast.body;
-
 		local scope = Scope:new(ast.globalScope);
 		body.scope:setParent(scope);
-
+		
 		ast.body = Ast.Block({
 			Ast.ReturnStatement({
-				Ast.FunctionCallExpression(Ast.FunctionLiteralExpression({Ast.VarargExpression()}, body), {Ast.VarargExpression()})
-			});
+				Ast.FunctionCallExpression(
+					Ast.VariableExpression(ast.globalScope, ast.globalScope:resolve("pcall")),
+					{Ast.FunctionLiteralExpression({Ast.VarargExpression()}, body), Ast.VarargExpression()}
+				)
+			})
 		}, scope);
 	end
 end
