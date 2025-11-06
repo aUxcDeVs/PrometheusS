@@ -23,8 +23,8 @@ return {
     };
     ["Weak"] = {
         LuaVersion = "Lua51";
-        VarNamePrefix = "A";
-        NameGenerator = "Mangled";
+        VarNamePrefix = "";
+        NameGenerator = "MangledShuffled";
         PrettyPrint = false;
         Seed = 0;
         Steps = {
@@ -62,7 +62,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "A";
         -- Name Generator for Variables
-        NameGenerator = "Mangled";
+        NameGenerator = "MangledShuffled";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
